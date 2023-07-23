@@ -1,0 +1,68 @@
+/* footer.css */
+body {
+  margin: 0; /* Reset the default margin on body */
+}
+
+.footer-container {
+  background-color: #f1f1f1;
+  box-shadow: 2px 0px 0px 0px rgb(79, 79, 79);
+  color: #0f0f0f;
+  padding: 5px 0; /* Decrease the vertical padding further */
+  text-align: center;
+  margin: auto; /* Center the footer horizontally */
+  max-width: 100%; /* Make the footer container fill the available width */
+  min-height: 5px; /* Set the minimum height for the footer (half of the previous height) */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social-links li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-social-links a {
+  color: #090808;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social-links a:hover {
+  color: #007bff;
+}
+
+/* Update styles for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  /* .footer-social-links li {
+    margin-bottom: 10px;
+    margin-right: 0;
+  } */
+}
+
+/* Additional styles for the footer */
+.footer-text {
+  color: #000000; /* Change the text color to match with the white background */
+}

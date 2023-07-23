@@ -1,0 +1,13 @@
+.posts {
+  flex: 9;
+  padding-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.posts:only-child {
+  align-items: center;
+  justify-content: center;
+}

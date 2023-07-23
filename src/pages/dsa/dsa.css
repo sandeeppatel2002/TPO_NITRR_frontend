@@ -1,0 +1,131 @@
+/* Overall table styles */
+.blind-description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.blind-description p {
+  font-size: larger;
+  margin-bottom: 10px;
+}
+
+.blind-description strong {
+  font-size: larger;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.wp-block-table {
+  width: 100%;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Header row styles */
+.wp-block-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Regular row styles */
+.wp-block-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Paragraph styles inside table cells */
+.wp-block-table p {
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 10px;
+  /* margin-left: 10px; */
+  /* text-align: left; */
+}
+/* .wp-block-table p strong {
+  margin-left: -10px;
+} */
+/* Styling links inside table cells */
+.wp-block-table a {
+  text-decoration: none;
+  color: #0645ad;
+  display: inline-block;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.wp-block-table a.link-text {
+  color: #000; /* Change the color of the link text to black */
+  text-decoration: none; /* Remove underline on the link text */
+}
+
+.wp-block-table a:hover {
+  text-decoration: underline;
+}
+
+/* Checkbox styles */
+.wp-block-table td input[type="checkbox"] {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.wp-block-table td input[type="checkbox"]:not(:checked) {
+  visibility: hidden;
+}
+
+/* Table cells with text that should be truncated */
+.wp-block-table td:not(:first-child) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+/* Table styles */
+.wp-block-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Even row background color */
+.wp-block-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect on rows */
+.wp-block-table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Specific column widths */
+.wp-block-table tbody td:first-child {
+  text-align: center;
+  width: 5%;
+}
+
+.wp-block-table tbody td:nth-child(2) {
+  width: 45%;
+}
+
+.wp-block-table tbody td:nth-child(3) {
+  width: 25%;
+}
+
+.wp-block-table tbody td:nth-child(4) {
+  width: 25%;
+}
+
+/* Specific text alignment for columns 2 to 4 */
+.wp-block-table tbody td:nth-child(n + 2):nth-child(-n + 4) {
+  text-align: left;
+}
